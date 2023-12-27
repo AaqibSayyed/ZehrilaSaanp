@@ -1,0 +1,67 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100wh;
+    position: relative;
+}
+
+.conainer{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/Snake\ Wallpaper\ Download\ FREE\ Widescreen\ HD\ Dangerous\ Black\ Snake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.snake-box{
+    /* border: 5px dotted white; */
+    background: linear-gradient(to bottom right, #1a1a1a 100%, #808080);
+    box-shadow: 5px 5px 20px 5px rgba(169, 169, 169, 0.8); 
+    width: 90vmin;
+    height: 80vmin;
+    opacity: 0.85;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    border-radius: 5px;
+}
+
+.snakeHeadPosition{
+    border: 4px solid black;
+    box-shadow: 10px 10px 30px 10px grey;
+    border-radius: 100%;
+}
+
+
+
+.snakeBodyPosition{
+    border: 4px solid black;
+    border-radius: 7px;
+}
+
+#score{
+    position: absolute;
+    top: 12%;
+    left: 9%;
+    color: white;
+    text-transform: uppercase;
+}
+
+#high-score{
+    position: absolute;
+    top: 15%;
+    left: 9%;
+    color: white;
+    text-transform: uppercase;
+}
